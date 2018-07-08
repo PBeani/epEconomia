@@ -14,18 +14,19 @@ function changeCategorie() {
 
 function changeView() {
     var btn = document.getElementById('changeView');
-
-    if (btn.innerHTML !== 'Ver texto') {
-        btn.innerHTML = 'Ver texto';
+    debugger
+    if (btn.innerHTML !== 'T') {
+        btn.innerHTML = 'T';
         document.getElementById('plot').style.display = 'block';
         document.getElementById('text').style.display = 'none';
     } else {
-        btn.innerHTML = 'Ver plot';
+        btn.innerHTML = 'P';
         document.getElementById('text').style.display = 'block';
         document.getElementById('plot').style.display = 'none';
     }
 }
 
-function item() {
-    alert("Coloca o plot e o texto desse item no quadrado verde (visualização)");
+function item(selector) {
+    $('.plot').addClass('hidden');
+    $(selector).removeClass('hidden');
 }

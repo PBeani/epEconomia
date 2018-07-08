@@ -40,17 +40,19 @@ body {
     margin: 20px auto;
     background: green;
     height: 400px;
-    padding: 10px;
-}
-
-.view div {
-    margin-top: 20px;
+    padding: 20px;
+    min-width: 700px;
 }
 
 #changeView {
     cursor: pointer;
     background: red;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
 }
 
 .item {
@@ -71,4 +73,116 @@ footer{
     height: 80px;
     padding-top: 20px;
     box-sizing: border-box; 
+}
+
+#pibCalculator{
+    display: flex;
+    height: 100%;
+}
+
+#itemList{
+    background: red;
+    width: 25%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#itemList .list{
+    overflow-y: scroll;
+}
+
+#itemList .item{
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#plot{
+    height: 100%;
+}
+
+.modal-label{
+    margin-right: 20px;
+}
+
+#yearList{
+    background: red;
+    width: 40%;
+    min-width: 200px;
+    display: flex;
+    margin-left: 50px;
+    justify-content: flex-end;
+}
+
+#yearList .yearValues{
+    overflow-y: scroll;
+    flex-grow: 1;
+}
+
+#yearList .item{
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#yearList .yearOptions{
+    margin: 0 20px;
+}
+
+#yearList .yearOptions .year{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#yearList .yearItem div {
+    display: flex;
+    padding: 10px 30px;
+    justify-content: space-between;
+}
+
+#yearList .yearItem input{
+    margin-left: 10px;
+}
+
+.selectedYear{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.yearInfo span{
+    display: block;
+}
+
+.yearInfo span:last-child{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#yearData{
+    margin-left: 50px;
+    width: 30%;
+}
+
+#yearData .title{
+    margin-bottom: 30px;
+}
+#yearData .line{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.hidden{
+    display: none !important;
+    overflow: hidden;
 }
