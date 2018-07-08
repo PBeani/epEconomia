@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+body {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.categorie {
+    width: 100%;
+    background: blue;
+    height: 100px;
+    line-height: 100%;
+}
+
+#changeCategorie {
+    width: 20%;
+    background: red;
+    float: right;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    cursor: pointer;
+}
+
+#categorieSpan {
+    width: 80%;
+    float: left;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.view {
+    margin: 20px auto;
+    background: green;
+    height: 400px;
+    padding: 10px;
+}
+
+.view div {
+    margin-top: 20px;
+}
+
+#changeView {
+    cursor: pointer;
+    background: red;
+    height: 40px;
+}
+
+.item {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: blue;
+    padding: 45px 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+footer{
+    background: green;
+    width: 100%;
+    margin-top: 20px;
+    height: 80px;
+    padding-top: 20px;
+    box-sizing: border-box; 
+}

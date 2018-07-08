@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trabalho Economia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="src/css/main.css">
+</head>
+
+<body>
+    <header class="categorie">
+        <div id="changeCategorie" onclick="changeCategorie()"> Trocar</div>
+        <span id="categorieSpan">MACRO</span>
+    </header>
+    <section>
+        <div class="view">
+            <div id="changeView" onclick="changeView()">Ver texto</div>
+            <div id="plot">AQUI VAI OS INPUTS E A VISUALIZACAO DO QUE OS PARAMETROS MUDAM</div>
+            <div id="text" style="display: none;">AQUI VAI UM TEXTINHO EXPLICANDO O QUE SIGNIFICA ESSE CONTEUDO</div>
+        </div>
+        <div id="macroItens" class="itens">
+            <div class="item" onclick="item()">
+                <span>[MACRO] Item 1</span>
+            </div>
+        </div>
+        <div id="microItens" class="itens" style="display: none;">
+            <div class="item" onclick="item()">
+                <span>[MICRO] Item 1</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        MEMBROS DO GRUPO E TURMA
+    </footer>
+</body>
+<script src="src/js/main.js"></script>
+</html>
