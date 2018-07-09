@@ -50,7 +50,6 @@ $(document).ready(function () {
 
             for(var x in yearList){
                 calculateRealPib(x);
-                debugger;
                 $('#yearData', module).append(
                 '<div class="line">' +
                     '<label>' + yearList[x].year + ' - R$: </label>' +

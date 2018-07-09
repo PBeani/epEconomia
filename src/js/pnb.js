@@ -78,7 +78,6 @@ $(document).ready(function () {
             var chilePIB = 0;
             var chilePNB = 0;
             
-            debugger;
             $('.country').each(function () {
                 var $country = $(this);
                 var isBrazilTable = $('.countryName', $country).html() === "BRASIL" ? true : false;

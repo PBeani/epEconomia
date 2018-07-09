@@ -21,6 +21,94 @@
                 <div class="plot standard">
                     AQUI VAI UM CONTEUDO
                 </div>
+                <div id="inflacao" class="plot inflacao hidden">
+                    <table>
+                        <thead>
+                            <th>Ano</th>
+                            <th>PIB Nominal</th>
+                            <th>PIB Real</th>
+                            <th>Deflator</th>
+                            <th>Taxa de Inflação</th>
+                        </thead>
+                        <tbody>
+                            <tr index="0">
+                                <td class="year">2014</td>
+                                <td class="nominal">
+                                    <input type="number">
+                                </td>
+                                <td class="real">
+                                    <input type="number" disabled>
+                                </td>
+                                <td class="deflator">
+                                    <strong>100</strong>
+                                </td>
+                                <td class="taxa">
+                                    <strong>-</strong>
+                                </td>
+                            </tr>
+                            <tr index="1">
+                                <td class="year">2015</td>
+                                <td class="nominal">
+                                    <input type="number">
+                                </td>
+                                <td class="real">
+                                    <input type="number">
+                                </td>
+                                <td class="deflator">
+                                    <strong>-</strong>
+                                </td>
+                                <td class="taxa">
+                                    <strong>-</strong>
+                                </td>
+                            </tr>
+                            <tr index="2">
+                                <td class="year">2016</td>
+                                <td class="nominal">
+                                    <input type="number">
+                                </td>
+                                <td class="real">
+                                    <input type="number">
+                                </td>
+                                <td class="deflator">
+                                    <strong>-</strong>
+                                </td>
+                                <td class="taxa">
+                                    <strong>-</strong>
+                                </td>
+                            </tr>
+                            <tr index="3">
+                                <td class="year">2017</td>
+                                <td class="nominal">
+                                    <input type="number">
+                                </td>
+                                <td class="real">
+                                    <input type="number">
+                                </td>
+                                <td class="deflator">
+                                    <strong>-</strong>
+                                </td>
+                                <td class="taxa">
+                                    <strong>-</strong>
+                                </td>
+                            </tr>
+                            <tr index="4">
+                                <td class="year">2018</td>
+                                <td class="nominal">
+                                    <input type="number">
+                                </td>
+                                <td class="real">
+                                    <input type="number">
+                                </td>
+                                <td class="deflator">
+                                    <strong>-</strong>
+                                </td>
+                                <td class="taxa">
+                                    <strong>-</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <div id="pnb" class="plot pnb hidden">
                     <div class="country">
                         <div class="countryName">BRASIL</div>
@@ -135,11 +223,14 @@
                 <div class="plot standard">
                     AQUI VAI UM TEXTINHO EXPLICANDO O QUE SIGNIFICA ESSE CONTEUDO
                 </div>
-                <div class="plot  pibCalculator" class="hidden">
+                <div class="plot  pibCalculator hidden">
                     AQUI VAI O TEXTO DE EXPLICACAO DA CALCULADORA DE PIB
                 </div>
-                <div class="plot  pnb" class="hidden">
+                <div class="plot pnb hidden">
                     AQUI VAI O TEXTO DE EXPLICACAO DE PIB E PNB
+                </div>
+                <div class="plot inflacao hidden">
+                    AQUI VAI O TEXTO DE EXPLICACAO DE INFLACAO
                 </div>
             </div>
         </div>
@@ -149,6 +240,9 @@
             </div>
             <div class="item" onclick="item('.pnb')">
                 <span>PIB/PNB</span>
+            </div>
+            <div class="item" onclick="item('.inflacao')">
+                <span>Taxa de Inflação</span>
             </div>
         </div>
         <div id="microItens" class="itens" style="display: none;">
@@ -165,6 +259,7 @@
 <script src="src/js/main.js"></script>
 <script src="src/js/sweetalert.js"></script>
 <script src="src/js/pibCalculator.js"></script>
+<script src="src/js/inflation.js"></script>
 <script src="src/js/pnb.js"></script>
 
 </html>

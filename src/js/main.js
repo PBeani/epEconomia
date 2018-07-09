@@ -14,7 +14,6 @@ function changeCategorie() {
 
 function changeView() {
     var btn = document.getElementById('changeView');
-    debugger
     if (btn.innerHTML !== 'T') {
         btn.innerHTML = 'T';
         document.getElementById('plot').style.display = 'block';

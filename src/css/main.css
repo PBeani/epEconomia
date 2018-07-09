@@ -224,3 +224,11 @@ footer{
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
+.inflacao table{
+    width: 100%;
+}
+
+.inflacao tr{
+    margin-bottom: 20px;
+}
