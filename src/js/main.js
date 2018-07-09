@@ -3,11 +3,11 @@ function changeCategorie() {
 
     if (span.innerHTML !== 'MACRO') {
         span.innerHTML = 'MACRO';
-        document.getElementById('macroItens').style.display = 'block';
+        document.getElementById('macroItens').style.display = 'flex';
         document.getElementById('microItens').style.display = 'none';
     } else {
         span.innerHTML = 'MICRO';
-        document.getElementById('microItens').style.display = 'block';
+        document.getElementById('microItens').style.display = 'flex';
         document.getElementById('macroItens').style.display = 'none';
     }
 }

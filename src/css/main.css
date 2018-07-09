@@ -55,6 +55,11 @@ body {
     z-index: 2;
 }
 
+.itens{
+    display: flex;
+    justify-content: center;
+}
+
 .item {
     display: inline-block;
     width: 150px;
@@ -62,6 +67,7 @@ body {
     background: blue;
     padding: 45px 10px;
     margin-bottom: 20px;
+    margin-right: 20px;
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -185,4 +191,36 @@ footer{
 .hidden{
     display: none !important;
     overflow: hidden;
+}
+
+.pnb.plot{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.pnb .country{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pnb .countryName{
+    margin-bottom: 20px;
+}
+
+.pnb .addCompany{
+    background: red;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pnb .companyList{
+    width: 100%;
+}
+
+.pnb .countryData{
+    overflow-x: hidden;
+    overflow-y: scroll;
 }

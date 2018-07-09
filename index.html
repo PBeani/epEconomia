@@ -21,6 +21,62 @@
                 <div class="plot standard">
                     AQUI VAI UM CONTEUDO
                 </div>
+                <div id="pnb" class="plot pnb hidden">
+                    <div class="country">
+                        <div class="countryName">BRASIL</div>
+                        <div class="countryData">
+                            <table class="companyList">
+                                <thead>
+                                    <th>Empresa</th>
+                                    <th>Renda</th>
+                                    <th>Nacionalidade</th>
+                                    <th></th>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="addCompany"> Adicionar Empresa </div>
+                        <div class="totals">
+                            <div class="pib">
+                                <span>PIB - R$: </span>
+                                <strong>0</strong>
+                            </div>
+                            <div class="pnb">
+                                <span>PNB - R$: </span>
+                                <strong>0</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="country">
+                        <div class="countryName">CHILE</div>
+                        <div class="countryData">
+                            <table class="companyList">
+                                <thead>
+                                    <th>Empresa</th>
+                                    <th>Renda</th>
+                                    <th>Nacionalidade</th>
+                                    <th></th>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="addCompany"> Adicionar Empresa </div>
+                        <div class="totals">
+                            <div class="pib">
+                                <span>PIB - R$: </span>
+                                <strong>0</strong>
+                            </div>
+                            <div class="pnb">
+                                <span>PNB - R$: </span>
+                                <strong>0</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id="pibCalculator" class="plot pibCalculator hidden">
                     <div id="itemList">
                         <div class="list">
@@ -82,11 +138,17 @@
                 <div class="plot  pibCalculator" class="hidden">
                     AQUI VAI O TEXTO DE EXPLICACAO DA CALCULADORA DE PIB
                 </div>
+                <div class="plot  pnb" class="hidden">
+                    AQUI VAI O TEXTO DE EXPLICACAO DE PIB E PNB
+                </div>
             </div>
         </div>
         <div id="macroItens" class="itens">
             <div class="item" onclick="item('.pibCalculator')">
                 <span>PIB Real e Nominal</span>
+            </div>
+            <div class="item" onclick="item('.pnb')">
+                <span>PIB/PNB</span>
             </div>
         </div>
         <div id="microItens" class="itens" style="display: none;">
@@ -103,5 +165,6 @@
 <script src="src/js/main.js"></script>
 <script src="src/js/sweetalert.js"></script>
 <script src="src/js/pibCalculator.js"></script>
+<script src="src/js/pnb.js"></script>
 
 </html>
