@@ -21,6 +21,49 @@
                 <div class="plot standard">
                     AQUI VAI UM CONTEUDO
                 </div>
+                <div id="fleming" class="plot fleming hidden">
+                    <div class="flemingContent">
+                        <div class="canvas">
+                            <div class="flemingView">
+                            </div>
+                            <div class="content">
+                                <div class="actions">
+                                </div>
+                                <div class="results">
+                                    <div class="resultItem y">Y (ou Q)</div>
+                                    <div class="resultItem e">e (ou i)</div>
+                                    <div class="resultItem nx">NX</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="flemingItem" plot="lm">
+                                <span>LM</span>
+                            </div>
+                            <div class="flemingItem" plot="ls">
+                                <span>IS</span>
+                            </div>
+                            <div class="flemingItem" plot="bp">
+                                <span>BP</span>
+                            </div>
+                            <div class="flemingItem" plot="inicial">
+                                <span>Posição Inicial</span>
+                            </div>
+                            <div class="flemingItem" plot="expM">
+                                <span>Expansão monetária</span>
+                            </div>
+                            <div class="flemingItem" plot="expF">
+                                <span>Expansão Fiscal</span>
+                            </div>
+                            <div class="flemingItem" plot="imp">
+                                <span>Restrição de Importação</span>
+                            </div>
+                            <div class="flemingItem">
+                                <span>Taxa Fixa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id="inflacao" class="plot inflacao hidden">
                     <table>
                         <thead>
@@ -232,6 +275,9 @@
                 <div class="plot inflacao hidden">
                     AQUI VAI O TEXTO DE EXPLICACAO DE INFLACAO
                 </div>
+                <div class="plot fleming hidden">
+                    AQUI VAI O TEXTO DE EXPLICACAO DE MUNDELL FLEMING
+                </div>
             </div>
         </div>
         <div id="macroItens" class="itens">
@@ -243,6 +289,9 @@
             </div>
             <div class="item" onclick="item('.inflacao')">
                 <span>Taxa de Inflação</span>
+            </div>
+            <div class="item" onclick="item('.fleming')">
+                <span>Mundell-Fleming</span>
             </div>
         </div>
         <div id="microItens" class="itens" style="display: none;">
@@ -260,6 +309,7 @@
 <script src="src/js/sweetalert.js"></script>
 <script src="src/js/pibCalculator.js"></script>
 <script src="src/js/inflation.js"></script>
+<script src="src/js/fleming.js"></script>
 <script src="src/js/pnb.js"></script>
 
 </html>

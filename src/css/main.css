@@ -232,3 +232,120 @@ footer{
 .inflacao tr{
     margin-bottom: 20px;
 }
+
+.flemingContent{
+    display: flex;
+}
+.flemingContent .canvas{
+    flex-grow: 1;
+    display: flex;
+}
+
+.flemingContent .canvas .content{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0 50px;
+    flex-direction: column;
+}
+
+.flemingContent .canvas .content .actions{
+    flex-grow: 1;
+}
+
+.flemingContent .canvas .content .results{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flemingContent .canvas .content .results .resultItem{
+    width: 120px;
+    margin-top: 50px;
+}
+
+.flemingContent .options{
+    display: flex;
+    flex-direction: column;
+}
+
+.flemingContent .options .flemingItem{
+    background: blue;
+    margin-bottom: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.flemingContent .options .flemingItem:last-child{
+    background: red;
+}
+
+.flemingContent .canvas .flemingView{
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 400px;
+    background-size: 450px 400px;
+}
+
+.flemingView{
+    background: url('../assets/img/inicial.png');
+}
+.flemingView.inicial{
+    background: url('../assets/img/inicial.png');
+}
+.content .resultItem{
+    background: blue;
+}
+.flemingView.lm{
+    background: url('../assets/img/lm.png');
+}
+.flemingView.ls{
+    background: url('../assets/img/ls.png');
+}
+.flemingView.bp{
+    background: url('../assets/img/bp.png');
+}
+
+.flemingView.expM{
+    background: url('../assets/img/monetaria.png');
+}
+.flemingView.expF{
+    background: url('../assets/img/fiscal.png');
+}
+.content.expF .resultItem.y{
+    background: green;
+}
+.flemingView.imp{
+    background: url('../assets/img/import.png');
+}
+.content.imp .resultItem.y, .content.imp .resultItem.nx{
+    background: green;
+}
+
+.flemingView.expM.floating{
+    background: url('../assets/img/monetariaf.png');
+    background-size: 450px 400px;
+}
+.content.expM.floating .resultItem.e{
+    background: red;
+}
+.content.expM.floating .resultItem.nx, .content.expM.floating .resultItem.y{
+    background: green;
+}
+.flemingView.expF.floating{
+    background: url('../assets/img/fiscalf.png');
+    background-size: 450px 400px;
+}
+.content.expF.floating .resultItem.e{
+    background: green;
+}
+.content.expF.floating .resultItem.nx{
+    background: red;
+}
+.flemingView.imp.floating{
+    background: url('../assets/img/importf.png');
+    background-size: 450px 400px;
+}
+.content.imp.floating .resultItem.e{
+    background: green;
+}
