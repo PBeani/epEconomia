@@ -7,10 +7,10 @@ $(document).ready(function () {
     	function calcularElasticidade(){
 
     		//atribuindo valor as variaveis
-    		var demandaFinal = document.calcDemanda.demFinal.value;
-      		var demandaInicial = document.calcDemanda.demInicial.value;
-      		var rendaFinal = document.calcDemanda.renFinal.value;
-      		var rendaInicial = document.calcDemanda.renInicial.value;
+    		var demandaFinal = document.calcRenda.demFinal.value;
+      		var demandaInicial = document.calcRenda.demInicial.value;
+      		var rendaFinal = document.calcRenda.renFinal.value;
+      		var rendaInicial = document.calcRenda.renInicial.value;
 
       		//variaveis de calculo
       		var demanda = (demandaFinal - demandaInicial)/demandaInicial;
@@ -18,7 +18,7 @@ $(document).ready(function () {
       		var resp = demanda/renda;
 
       		//resultado final
-      		document.calcDemanda.resp.value = resp;
+      		document.calcRenda.resp.value = resp;
     	}
     })();
 })
@@ -37,10 +37,10 @@ $(document).ready(function () {
       <label for="demInicial">Digite o valor da demanda inicial <strong>2</strong>:</label>
       <input type="text" name="demInicial" id="demInicial" />
 
-      <label for= "renFinal">Digite o valor da renda final <strong>1</strong>:</label>
+      <label for= "renFinal">Digite o valor da renda final <strong>3</strong>:</label>
       <input type="text" name="renFinal" id="renFinal" />
 
-      <label for="renInicial">Digite o valor da renda inicial <strong>2</strong>:</label>
+      <label for="renInicial">Digite o valor da renda inicial <strong>4</strong>:</label>
       <input type="text" name="renInicial" id="renInicial" />
 
       <input type="button" value="Calcular" class="botao" onClick="calcular(document.calcDemanda.oper.value)"/>
