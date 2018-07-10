@@ -336,6 +336,9 @@ footer{
     background: url('../assets/img/fiscalf.png');
     background-size: 450px 400px;
 }
+.content.expF.floating .resultItem.y{
+    background: blue;
+}
 .content.expF.floating .resultItem.e{
     background: green;
 }
@@ -348,4 +351,7 @@ footer{
 }
 .content.imp.floating .resultItem.e{
     background: green;
+}
+.content.imp.floating .resultItem.y, .content.imp.floating .resultItem.nx{
+    background: blue;
 }
