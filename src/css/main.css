@@ -281,6 +281,11 @@ footer{
     padding-bottom: 10px;
 }
 
+.pnb .companyList tr:nth-child(2n){
+    background: lightsteelblue;
+    color: white;
+}
+
 .pnb .companyList select, .pnb .companyList input{
     width: 80%;
 }
@@ -288,6 +293,7 @@ footer{
 .pnb .countryData{
     overflow-x: hidden;
     overflow-y: scroll;
+    flex-grow: 1;
 }
 
 .inflacao table{

@@ -4,6 +4,7 @@
     box-shadow: 2px 2px 2px lightsteelblue;
     color: lightsteelblue;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .basic.btn{
@@ -32,4 +33,24 @@
 
 .basic .companyList .remover{
     padding-bottom: 1px;
+}
+
+.basic .countryName{
+    font-weight: bold;
+}
+
+table.basic{
+    padding: 15px;
+    border-collapse:collapse;
+    border: none;
+    overflow: hidden;
+}
+
+table.basic td{
+    height: 60px;
+    border-bottom: 1px solid lightsteelblue;
+}
+
+table.basic th{
+    border-bottom: 1px solid lightsteelblue;
 }
