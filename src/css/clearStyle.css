@@ -1,0 +1,31 @@
+.basic{
+    background: white;
+    border: 1px solid lightsteelblue;
+    box-shadow: 2px 2px 2px lightsteelblue;
+    color: lightsteelblue;
+    border-radius: 10px;
+}
+
+.basic.btn{
+    background: lightsteelblue;
+    color: white;
+    box-shadow: none;
+    padding: 10px 5px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.basic .remover{
+    border: none;
+    background: red;
+    color: white;
+    padding-bottom: 2px;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.basic.yearItem{
+    margin-bottom: 15px;
+}

@@ -107,7 +107,7 @@ $(document).ready(function () {
             
             for(var x in list) {
                 $('.yearValues', module).append(
-                    '<div class="yearItem" key="' + x + '">' +
+                    '<div class="yearItem basic" key="' + x + '">' +
                         '<span>' + list[x].nome + '</span>' +
                         '<div>' +
                             '<label>Valor: </label>' +
@@ -207,7 +207,7 @@ $(document).ready(function () {
                     if (add) {
                         itemList.push(login);
                         addOnYearList(login);
-                        $('.list', module).append('<div class="item"><span class="nome">' + login + '</span><button type="button" class="remover">Remover</button></div>');
+                        $('.list', module).append('<div class="item"><span class="nome">' + login + '</span><button type="button" class="remover">x</button></div>');
                         addRemoveAction();
                     }
                 }
