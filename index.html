@@ -25,59 +25,106 @@
                 <div id="fleming" class="plot fleming hidden">
                     <div class="flemingContent">
                         <div class="canvas">
-                            <div class="flemingView">
+                            <div class="basic frame">
+                                <div class="flemingView">
+                                </div>
                             </div>
                             <div class="content">
-                                <div class="actions">
+                                <div class="actions basic">
                                     <div class="actionItem money-fixed hidden">
-                                        Expansão monetaria fixa
+                                        <h2>Expansão monetária - Taxa de cambio fixa</h2>
+                                        <ol>
+                                            <li>Desloca LM para direita;</li>
+                                            <li>Gera Défice na balança de pagamentos(BP);</li>
+                                            <li>Para equilibrar, retorna LM para a posição incial;</li>
+                                            <li>Y permanece o mesmo;</li>
+                                            <li>e permanece o mesmo;</li>
+                                            <li>NX permanece o mesmo.</li>
+                                        </ol>
                                     </div>
                                     <div class="actionItem money-flex hidden">
-                                        Expansão monetaria flexivel
+                                        <h2>Expansão monetária - Taxa de cambio flutuante</h2>
+                                        <ol>
+                                            <li>Desloca LM para direita;</li>
+                                            <li>Gera Défice na balança de pagamentos(BP);</li>
+                                            <li>Para equilibrar, desloca IS para direita;</li>
+                                            <li>Y aumenta;</li>
+                                            <li>e diminui;</li>
+                                            <li>NX aumenta.</li>
+                                        </ol>
                                     </div>
                                     <div class="actionItem fiscal-fixed hidden">
-                                        Expansão fiscal fixa
+                                        <h2>Expansão fiscal - Taxa de cambio fixa</h2>
+                                        <ol>
+                                            <li>Desloca IS para à direita;</li>
+                                            <li>Gera Excedente na balança de pagamentos(BP);</li>
+                                            <li>Para equilibrar, move LM para direita;</li>
+                                            <li>Y aumenta;</li>
+                                            <li>e permanece o mesmo;</li>
+                                            <li>NX permanece o mesmo.</li>
+                                        </ol>
                                     </div>
                                     <div class="actionItem fiscal-flex hidden">
-                                        Expansão fiscal flexivel
+                                        <h2>Expansão fiscal - Taxa de cambio flutuante</h2>
+                                        <ol>
+                                            <li>Desloca IS para direita;</li>
+                                            <li>Gera Excedente na balança de pagamentos(BP);</li>
+                                            <li>Para equilibrar, retorna IS para a posição incial;</li>
+                                            <li>Y permanece o mesmo;</li>
+                                            <li>e aumenta;</li>
+                                            <li>NX diminui.</li>
+                                        </ol>
                                     </div>
                                     <div class="actionItem import-fixed hidden">
-                                        Restrição de importação fixa
+                                        <h2>Restrição de importação - Taxa de cambio fixa</h2>
+                                        <ol>
+                                            <li>Desloca IS para à direita;</li>
+                                            <li>Desloca LM para à direita;</li>
+                                            <li>Y aumenta;</li>
+                                            <li>e permanece o mesmo;</li>
+                                            <li>NX aumenta.</li>
+                                        </ol>
                                     </div>
                                     <div class="actionItem import-flex hidden">
-                                        Restrição de importação flexivel
+                                        <h2>Restrição de importação - Taxa de cambio flutuante</h2>
+                                        <ol>
+                                            <li>Desloca IS para à direita;</li>
+                                            <li>Y permanece o mesmo;</li>
+                                            <li>e aumenta;</li>
+                                            <li>NX permanece o mesmo.</li>
+                                        </ol>
                                     </div>
                                 </div>
                                 <div class="results">
-                                    <div class="resultItem y">Y (ou Q)</div>
-                                    <div class="resultItem e">e (ou i)</div>
-                                    <div class="resultItem nx">NX</div>
+                                    <div class="resultItem y basic">Y</div>
+                                    <div class="resultItem e basic">e</div>
+                                    <div class="resultItem nx basic">NX</div>
                                 </div>
                             </div>
                         </div>
                         <div class="options">
-                            <div class="flemingItem" plot="lm">
+                            <div class="flemingItem basic" plot="lm">
                                 <span>LM</span>
                             </div>
-                            <div class="flemingItem" plot="ls">
+                            <div class="flemingItem basic" plot="ls">
                                 <span>IS</span>
                             </div>
-                            <div class="flemingItem" plot="bp">
+                            <div class="flemingItem basic" plot="bp">
                                 <span>BP</span>
                             </div>
-                            <div class="flemingItem" plot="inicial">
+                            <div class="flemingItem basic" plot="inicial">
                                 <span>Posição Inicial</span>
                             </div>
-                            <div class="flemingItem" plot="expM">
+                            <div class="flemingItem basic" plot="expM">
                                 <span>Expansão monetária</span>
                             </div>
-                            <div class="flemingItem" plot="expF">
+                            <div class="flemingItem basic" plot="expF">
                                 <span>Expansão Fiscal</span>
                             </div>
-                            <div class="flemingItem" plot="imp">
+                            <div class="flemingItem basic" plot="imp">
                                 <span>Restrição de Importação</span>
                             </div>
-                            <div class="flemingItem">
+                            <div class="flemingItem basic btn">
                                 <span>Taxa Fixa</span>
                             </div>
                         </div>
@@ -282,19 +329,19 @@
                 </div>
             </div>
             <div id="text" style="display: none;">
-                <div class="plot standard">
+                <div class="plot standard basic">
                     AQUI VAI UM TEXTINHO EXPLICANDO O QUE SIGNIFICA ESSE CONTEUDO
                 </div>
-                <div class="plot  pibCalculator hidden">
+                <div class="plot  pibCalculator basic hidden">
                     AQUI VAI O TEXTO DE EXPLICACAO DA CALCULADORA DE PIB
                 </div>
-                <div class="plot pnb hidden">
+                <div class="plot pnb basic hidden">
                     AQUI VAI O TEXTO DE EXPLICACAO DE PIB E PNB
                 </div>
-                <div class="plot inflacao hidden">
+                <div class="plot inflacao basic hidden">
                     AQUI VAI O TEXTO DE EXPLICACAO DE INFLACAO
                 </div>
-                <div class="plot fleming hidden">
+                <div class="plot fleming basic hidden">
                     AQUI VAI O TEXTO DE EXPLICACAO DE MUNDELL FLEMING
                 </div>
             </div>

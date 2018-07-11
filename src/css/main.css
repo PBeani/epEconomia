@@ -39,8 +39,6 @@ body {
 
 .view {
     margin: 20px auto;
-    background: green;
-    height: 400px;
     padding: 20px;
     min-width: 700px;
 }
@@ -76,10 +74,7 @@ body {
     background: white;
 }
 
-.item:hover{
-    color: white;
-    background-color: lightsteelblue;
-}
+
 
 footer{
     background: green;
@@ -318,6 +313,7 @@ footer{
     flex-grow: 1;
     padding: 0 50px;
     flex-direction: column;
+    width: 40%;
 }
 
 .flemingContent .canvas .content .actions{
@@ -333,6 +329,7 @@ footer{
 .flemingContent .canvas .content .results .resultItem{
     width: 120px;
     margin-top: 50px;
+    margin-right: 10px;
 }
 
 .flemingContent .options{
@@ -341,21 +338,17 @@ footer{
 }
 
 .flemingContent .options .flemingItem{
-    background: blue;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     padding: 0 20px;
     cursor: pointer;
-}
-
-.flemingContent .options .flemingItem:last-child{
-    background: red;
+    transition: all .2s ease;    
 }
 
 .flemingContent .canvas .flemingView{
     background-repeat: no-repeat;
-    width: 450px;
-    height: 400px;
-    background-size: 450px 400px;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
 }
 
 .flemingView{
@@ -365,7 +358,7 @@ footer{
     background: url('../assets/img/inicial.png');
 }
 .content .resultItem{
-    background: blue;
+    background: white;
 }
 .flemingView.lm{
     background: url('../assets/img/lm.png');
@@ -384,13 +377,19 @@ footer{
     background: url('../assets/img/fiscal.png');
 }
 .content.expF .resultItem.y{
-    background: green;
+    border-color: #AFD297;
+    color: white;
+    background: #AFD297;
+    box-shadow: none;
 }
 .flemingView.imp{
     background: url('../assets/img/import.png');
 }
 .content.imp .resultItem.y, .content.imp .resultItem.nx{
-    background: green;
+    border-color: #AFD297;
+    color: white;
+    background: #AFD297;
+    box-shadow: none;
 }
 
 .flemingView.expM.floating{
@@ -398,31 +397,52 @@ footer{
     background-size: 450px 400px;
 }
 .content.expM.floating .resultItem.e{
-    background: red;
+    border-color: #E1A18E;
+    color: white;
+    background: #E1A18E;
+    box-shadow: none;
 }
 .content.expM.floating .resultItem.nx, .content.expM.floating .resultItem.y{
-    background: green;
+    border-color: #AFD297;
+    color: white;
+    background: #AFD297;
+    box-shadow: none;
 }
 .flemingView.expF.floating{
     background: url('../assets/img/fiscalf.png');
     background-size: 450px 400px;
 }
 .content.expF.floating .resultItem.y{
-    background: blue;
+    background: white;
+    border: 1px solid lightsteelblue;
+    box-shadow: 2px 2px 2px lightsteelblue;
+    color: lightsteelblue;
 }
 .content.expF.floating .resultItem.e{
-    background: green;
+    border-color: #AFD297;
+    color: white;
+    background: #AFD297;
+    box-shadow: none;
 }
 .content.expF.floating .resultItem.nx{
-    background: red;
+    border-color: #E1A18E;
+    color: white;
+    background: #E1A18E;
+    box-shadow: none;
 }
 .flemingView.imp.floating{
     background: url('../assets/img/importf.png');
     background-size: 450px 400px;
 }
 .content.imp.floating .resultItem.e{
-    background: green;
+    border-color: #AFD297;
+    color: white;
+    background: #AFD297;
+    box-shadow: none;
 }
 .content.imp.floating .resultItem.y, .content.imp.floating .resultItem.nx{
-    background: blue;
+    background: white;
+    border: 1px solid lightsteelblue;
+    box-shadow: 2px 2px 2px lightsteelblue;
+    color: lightsteelblue;
 }

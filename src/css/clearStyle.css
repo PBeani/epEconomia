@@ -53,4 +53,37 @@ table.basic td{
 
 table.basic th{
     border-bottom: 1px solid lightsteelblue;
+    height: 50px;
+}
+
+table.basic td input{
+    height: 80%;
+}
+
+.basic.frame{
+    width: 450px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.item:hover, .flemingItem:hover{
+    color: white;
+    background-color: lightsteelblue;
+}
+
+.basic h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.basic ol{
+    padding-left: 40px;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.basic ol li{
+    margin-left: 10px;
 }
