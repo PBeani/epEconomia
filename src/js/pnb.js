@@ -42,7 +42,7 @@ $(document).ready(function () {
                             '</select>' +
                             '</td>' +
                             '<td>' +
-                            '<button type="button" class="remover">Remover</button>' +
+                            '<button type="button" class="remover">x</button>' +
                             '</td>' +
                             '</tr>');
 

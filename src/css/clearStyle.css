@@ -29,3 +29,7 @@
 .basic.yearItem{
     margin-bottom: 15px;
 }
+
+.basic .companyList .remover{
+    padding-bottom: 1px;
+}

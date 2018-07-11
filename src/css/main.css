@@ -244,13 +244,19 @@ footer{
 }
 
 .pnb .country{
-    width: 50%;
+    width: 48%;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px;
 }
 
 .pnb .countryName{
     margin-bottom: 20px;
+}
+
+.pnb .totals{
+    margin-top: 20px;
 }
 
 .pnb .addCompany{
@@ -262,6 +268,21 @@ footer{
 
 .pnb .companyList{
     width: 100%;
+    padding-right: 10px;
+    border-collapse:collapse;
+}
+
+.pnb .companyList th{
+    font-weight: 400;
+}
+.pnb .companyList td{
+    word-wrap: break-word;
+    max-width: 120px;
+    padding-bottom: 10px;
+}
+
+.pnb .companyList select, .pnb .companyList input{
+    width: 80%;
 }
 
 .pnb .countryData{
