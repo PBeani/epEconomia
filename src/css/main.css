@@ -4,6 +4,7 @@
     position: relative;
 }
 
+
 body {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,16 +12,20 @@ body {
     text-align: center;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
 .categorie {
     width: 100%;
-    background: blue;
+    background: black;
     height: 100px;
     line-height: 100%;
+    font-family: 'Varela Round', sans-serif;
+
 }
 
 #changeCategorie {
     width: 20%;
-    background: red;
+    background: #0091C2;
     float: right;
     height: 100%;
     box-sizing: border-box;
@@ -38,7 +43,7 @@ body {
 
 .view {
     margin: 20px auto;
-    background: green;
+    background: #404040;
     height: 400px;
     padding: 20px;
     min-width: 700px;
@@ -46,12 +51,16 @@ body {
 
 #changeView {
     cursor: pointer;
-    background: red;
+    background: #f2f2f2;
+    color:#000;
     width: 60px;
     height: 60px;
     position: absolute;
     bottom: 20px;
     right: 20px;
+    border-radius:5px;
+    font-size:16px;
+    line-height: 60px;
     z-index: 2;
 }
 
@@ -63,22 +72,29 @@ body {
 .item {
     display: inline-block;
     width: 150px;
-    height: 150px;
-    background: blue;
-    padding: 45px 10px;
+    height: 105px;
+    background: black;
+    padding: 25px 20px;
     margin-bottom: 20px;
     margin-right: 20px;
     cursor: pointer;
+    border-radius:5px;
+    font-size: 18px;
     box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+
 }
 
 footer{
-    background: green;
+    background: #0091C2;
     width: 100%;
     margin-top: 20px;
     height: 80px;
     padding-top: 20px;
+    font-size: 16px;
     box-sizing: border-box; 
+    font-family: 'Varela Round', sans-serif;
+
 }
 
 #pibCalculator{
@@ -87,7 +103,7 @@ footer{
 }
 
 #itemList{
-    background: red;
+    background: 777;
     width: 25%;
     min-width: 200px;
     display: flex;
@@ -106,10 +122,18 @@ footer{
     height: 50px;
     justify-content: space-between;
     align-items: center;
+
 }
 
 #plot{
     height: 100%;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+.plot{
+    font-family: 'Varela Round', sans-serif;
+
 }
 
 .modal-label{
@@ -117,7 +141,7 @@ footer{
 }
 
 #yearList{
-    background: red;
+    background: 777;
     width: 40%;
     min-width: 200px;
     display: flex;
@@ -200,24 +224,32 @@ footer{
 }
 
 .pnb .country{
-    width: 50%;
+    width: 49%;
     display: flex;
     flex-direction: column;
 }
 
 .pnb .countryName{
     margin-bottom: 20px;
+    font-family: 'Varela Round', sans-serif;
+
 }
 
 .pnb .addCompany{
-    background: red;
+    background: #fff;
     padding: 10px;
     cursor: pointer;
-    margin-top: 10px;
+    border-radius:5px;
+    color:#1483A8;
+    font-weight: bold;
+    font-size:18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .pnb .companyList{
     width: 100%;
+    font-size: 20px;
 }
 
 .pnb .countryData{
@@ -225,12 +257,65 @@ footer{
     overflow-y: scroll;
 }
 
+.pnb table{
+    border-spacing: 0 15px;
+}
+
+.pnb table tbody{
+    border-spacing: 0 15px;
+    font-size:17px;
+}
+
+.pnb input{
+    height: 13px;
+    padding:8px;
+    font-size:14px;
+    border:none;
+}
+
+.pnb select{
+    height: 32px;
+    width: 150px;
+    padding:8px;
+    font-size:14px;
+    border:none;
+}
+
+.pnb button{
+    height: 28px;
+    font-size:12px;
+    color:#fff;
+    border:none;
+    line-height: 10px;
+    border-radius:4px;
+    padding:8px;
+    background:#C71616;
+}
+
 .inflacao table{
     width: 100%;
+    border-spacing: 0 15px;
+}
+
+.inflacao thead{
+    font-family: 'Varela Round', sans-serif;
+
 }
 
 .inflacao tr{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    font-size:18px;
+}
+
+.inflacao tr th{
+    margin-bottom: 40px;
+    font-size:20px;
+}
+
+.inflacao input{
+    height: 25px;
+    font-size:16px;
+    padding:8px;
 }
 
 .flemingContent{
@@ -251,6 +336,8 @@ footer{
 
 .flemingContent .canvas .content .actions{
     flex-grow: 1;
+    font-family: 'Varela Round', sans-serif;
+
 }
 
 .flemingContent .canvas .content .results{
@@ -261,7 +348,10 @@ footer{
 
 .flemingContent .canvas .content .results .resultItem{
     width: 120px;
+    padding-top: 15px;
     margin-top: 50px;
+    border-radius:5px;
+    font-size:16px;
 }
 
 .flemingContent .options{
@@ -270,14 +360,16 @@ footer{
 }
 
 .flemingContent .options .flemingItem{
-    background: blue;
+    background: black;
     margin-bottom: 5px;
-    padding: 0 20px;
+    padding: 5px 20px;
+    border-radius:5px;
     cursor: pointer;
+    font-size: 18px;
 }
 
 .flemingContent .options .flemingItem:last-child{
-    background: red;
+    background: #0C6CB0;
 }
 
 .flemingContent .canvas .flemingView{
@@ -294,7 +386,7 @@ footer{
     background: url('../assets/img/inicial.png');
 }
 .content .resultItem{
-    background: blue;
+    background: black;
 }
 .flemingView.lm{
     background: url('../assets/img/lm.png');
@@ -313,13 +405,13 @@ footer{
     background: url('../assets/img/fiscal.png');
 }
 .content.expF .resultItem.y{
-    background: green;
+    background: #0091C2;
 }
 .flemingView.imp{
     background: url('../assets/img/import.png');
 }
 .content.imp .resultItem.y, .content.imp .resultItem.nx{
-    background: green;
+    background: #0091C2;
 }
 
 .flemingView.expM.floating{
@@ -327,31 +419,31 @@ footer{
     background-size: 450px 400px;
 }
 .content.expM.floating .resultItem.e{
-    background: red;
+    background: #0C6CB0;
 }
 .content.expM.floating .resultItem.nx, .content.expM.floating .resultItem.y{
-    background: green;
+    background: #0091C2;
 }
 .flemingView.expF.floating{
     background: url('../assets/img/fiscalf.png');
     background-size: 450px 400px;
 }
 .content.expF.floating .resultItem.y{
-    background: blue;
+    background: black;
 }
 .content.expF.floating .resultItem.e{
-    background: green;
+    background: #0091C2;
 }
 .content.expF.floating .resultItem.nx{
-    background: red;
+    background: #0C6CB0;
 }
 .flemingView.imp.floating{
     background: url('../assets/img/importf.png');
     background-size: 450px 400px;
 }
 .content.imp.floating .resultItem.e{
-    background: green;
+    background: #0091C2;
 }
 .content.imp.floating .resultItem.y, .content.imp.floating .resultItem.nx{
-    background: blue;
+    background: black;
 }
