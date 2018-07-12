@@ -34,7 +34,7 @@ $(document).ready( function () {
         $('.flemingItem', module).last().off('click').on('click', function () {
             var $this = $(this);
             var rate = $this.find('span').html() ==  'Taxa Fixa' ? 'floating' : '';
-            $this.find('span').html(rate == 'floating' ? 'Taxa Flexivel' : 'Taxa Fixa');
+            $this.find('span').html(rate == 'floating' ? 'Taxa Flutuante' : 'Taxa Fixa');
             isFlex = rate == 'floating' ? true : false;
             updateView('', rate)
             updateContent('');
