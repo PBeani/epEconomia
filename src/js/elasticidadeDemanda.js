@@ -43,6 +43,9 @@ $(document).ready(function () {
       <label for="preInicial">Digite o valor preço inicial <strong>4</strong>:</label>
       <input type="text" name="preInicial" id="preInicial" />
 
+      <label for="resp">Resultado:</label>
+      <input type="text" name="resp" id="resp" />
+
       <input type="button" value="Calcular" class="botao" onClick="calcular(document.calcDemanda.oper.value)"/>
 
 

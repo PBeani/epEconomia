@@ -43,6 +43,9 @@ $(document).ready(function () {
       <label for="renInicial">Digite o valor da renda inicial <strong>4</strong>:</label>
       <input type="text" name="renInicial" id="renInicial" />
 
+      <label for="resp">Resultado:</label>
+      <input type="text" name="resp" id="resp" />
+
       <input type="button" value="Calcular" class="botao" onClick="calcular(document.calcDemanda.oper.value)"/>
 
 
