@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +8,7 @@
 
 body {
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: 25px;
     text-align: center;
     background: #EFF0FF;
@@ -14,19 +16,22 @@ body {
 
 .categorie {
     width: 100%;
-    background: blue;
+    background: white;
+    color: #0091C2;
     height: 100px;
     line-height: 100%;
+    box-shadow: 0 0 50px lightsteelblue;
 }
 
 #changeCategorie {
     width: 20%;
-    background: red;
+    background-color: #0091C2;
     float: right;
     height: 100%;
     box-sizing: border-box;
     padding: 30px;
     cursor: pointer;
+    color: white;
 }
 
 #categorieSpan {
@@ -39,20 +44,37 @@ body {
 
 .view {
     margin: 20px auto;
-    padding: 20px;
+    padding: 30px 20px 20px 20px;
     min-width: 700px;
 }
 
 #changeView {
     cursor: pointer;
-    background: red;
+    background-color: #0091C2;
     width: 60px;
     height: 60px;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    top: -10px;
+    right: 10px;
     z-index: 2;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px lightsteelblue;
 }
+
+#changeView .img-holder{
+    height: 100%;
+    background: url('../assets/img/arrow.png') no-repeat;
+    background-size: 30px 30px;
+    transform: rotate(90deg);
+    background-position: 50% 60%; 
+    
+}
+#changeView.viewPlot .img-holder{
+    background: url('../assets/img/qm.png') no-repeat;
+    background-size: 60px 60px;
+    transform: rotate(0);
+}
+
 
 .itens{
     display: flex;
@@ -77,12 +99,12 @@ body {
 
 
 footer{
-    background: green;
+    background: #0091C2;
     width: 100%;
     margin-top: 20px;
     height: 80px;
     padding-top: 20px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 #pibCalculator{
@@ -120,7 +142,7 @@ footer{
 
 #itemList .item:hover{
     background: white;
-    color: lightsteelblue;
+    color: #0091C2;
 }
 
 #plot{
@@ -255,7 +277,6 @@ footer{
 }
 
 .pnb .addCompany{
-    background: red;
     padding: 10px;
     cursor: pointer;
     margin-top: 10px;
@@ -330,6 +351,7 @@ footer{
     width: 120px;
     margin-top: 50px;
     margin-right: 10px;
+    padding-top: 10px;
 }
 
 .flemingContent .options{

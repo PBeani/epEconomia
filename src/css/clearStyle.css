@@ -8,7 +8,7 @@
 }
 
 .basic.btn{
-    background: lightsteelblue;
+    background: #0091C2;
     color: white;
     box-shadow: none;
     padding: 10px 5px;
@@ -18,7 +18,7 @@
 
 .basic .remover{
     border: none;
-    background: red;
+    background: #E1A18E;
     color: white;
     padding-bottom: 2px;
     border-radius: 100px;
@@ -68,7 +68,7 @@ table.basic td input{
 
 .item:hover, .flemingItem:hover{
     color: white;
-    background-color: lightsteelblue;
+    background-color: #0091C2;
 }
 
 .basic h2{

@@ -14,12 +14,12 @@ function changeCategorie() {
 
 function changeView() {
     var btn = document.getElementById('changeView');
-    if (btn.innerHTML !== 'T') {
-        btn.innerHTML = 'T';
+    if (btn.classList.contains('viewPlot')) {
+        btn.classList.remove('viewPlot');
         document.getElementById('plot').style.display = 'block';
         document.getElementById('text').style.display = 'none';
     } else {
-        btn.innerHTML = 'P';
+        btn.classList.add('viewPlot');
         document.getElementById('text').style.display = 'block';
         document.getElementById('plot').style.display = 'none';
     }

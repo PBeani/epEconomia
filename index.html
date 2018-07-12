@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="src/css/main.css">
     <link rel="stylesheet" type="text/css" href="src/css/clearStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 </head>
 
 <body>
@@ -17,10 +18,11 @@
     </header>
     <section>
         <div class="view">
-            <div id="changeView" onclick="changeView()">T</div>
+            <div id="changeView" onclick="changeView()" class="viewPlot">
+                <div class="img-holder"></div>
+            </div>
             <div id="plot">
                 <div class="plot standard">
-                    AQUI VAI UM CONTEUDO
                 </div>
                 <div id="fleming" class="plot fleming hidden">
                     <div class="flemingContent">
@@ -330,7 +332,6 @@
             </div>
             <div id="text" style="display: none;">
                 <div class="plot standard basic">
-                    AQUI VAI UM TEXTINHO EXPLICANDO O QUE SIGNIFICA ESSE CONTEUDO
                 </div>
                 <div class="plot  pibCalculator basic hidden">
                     AQUI VAI O TEXTO DE EXPLICACAO DA CALCULADORA DE PIB
