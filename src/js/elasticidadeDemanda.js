@@ -4,13 +4,14 @@ $(document).ready(function () {
     	var module = $("#elasticidadeDemanda");
     	
 
-    	function calcularElasticidade(){
+    	$('.btn', module).on('click', function () {
 
     		//atribuindo valor as variaveis
-    		var demandaFinal = document.calcDemanda.demFinal.value;
-      		var demandaInicial = document.calcDemanda.demInicial.value;
-      		var precoFinal = document.calcDemanda.preFinal.value;
-      		var precoInicial = document.calcDemanda.preInicial.value;
+    		var demandaFinal = $('.demFinal', module).val();
+        var demandaInicial = $('.demInicial', module).val();
+
+      		var precoFinal = $('.precoFinal', module).val();e;
+      		var precoInicial = $('.precoInicial', module).val();
 
       		//variaveis de calculo
       		var demanda = (demandaFinal - demandaInicial)/demandaInicial;
@@ -18,7 +19,7 @@ $(document).ready(function () {
       		var resp = demanda/preco;
 
       		//resultado final
-      		document.calcDemanda.resp.value = resp;
+      		$('.res', module).html(resp);
     	}
     })();
 });
