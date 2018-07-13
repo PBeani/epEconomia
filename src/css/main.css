@@ -269,7 +269,7 @@ footer{
     overflow: hidden;
 }
 
-.pnb.plot{
+#pnb.plot{
     display: flex;
     justify-content: space-between;
     height: 100%;
