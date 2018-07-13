@@ -11,8 +11,8 @@ $(document).ready(function () {
 			var precoInicialY = $('.preInicial', module).val();
 
 			//variaveis de calculo
-			var demanda = (demandaFinal - demandaInicial) / demandaInicial;
-			var preco = (precoFinal - precoInicial) / precoInicial;
+			var demanda = (demandaFinalX - demandaInicialX) / demandaInicial;
+			var preco = (precoFinalY - precoInicialY) / precoInicial;
 			var resp = demanda / preco;
 
 			//resultado final
