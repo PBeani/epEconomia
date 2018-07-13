@@ -116,9 +116,14 @@ footer{
     height: 100%;
 }
 
+.pib, .pnb{
+    padding:10px;
+}
+
 #itemList{
     width: 25%;
     min-width: 200px;
+    max-height: 500px;
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -151,6 +156,11 @@ footer{
 
 #plot{
     height: 100%;
+    padding:20px;
+}
+.plot{
+    padding: 20px;
+    text-align: center;
 }
 
 .modal-label{
@@ -160,6 +170,7 @@ footer{
 #yearList{
     width: 40%;
     min-width: 200px;
+    max-height: 500px;
     display: flex;
     margin-left: 50px;
     justify-content: flex-end;
@@ -266,6 +277,7 @@ footer{
 
 .pnb .country{
     width: 48%;
+    max-height:500px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -308,7 +320,21 @@ footer{
 
 .pnb .companyList select, .pnb .companyList input{
     width: 80%;
+    height: 35px;
+    font-size:16px;
+    font-family: 'Varela Round', sans-serif;
 }
+#pnb table{
+    border-spacing: 0 15px;
+}
+
+#pnb table thead{
+    margin-bottom:15px;
+    border-spacing: 0 15px;
+
+}
+
+
 
 .pnb .countryData{
     overflow-x: hidden;
@@ -365,7 +391,8 @@ footer{
 
 .flemingContent .options .flemingItem{
     margin-bottom: 8px;
-    padding: 0 20px;
+    padding: 10px 20px;
+    font-size:18px;
     cursor: pointer;
     transition: all .2s ease;    
 }
