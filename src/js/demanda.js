@@ -25,7 +25,7 @@ $(document).ready(function () {
           var res = "A curva de demanda se desloca para direita";
         }
         if (variante == "precComplementares") {
-          var res = "A curva de demanda se desloca para direita";
+          var res = "A curva de demanda se desloca para esquerda";
         }
         if (variante == "expectativas") {
           var res = "A curva de demanda se desloca para direita";
@@ -47,7 +47,7 @@ $(document).ready(function () {
             var res = "A curva de demanda se desloca para esquerda";
           }
           if (variante == "precComplementares") {
-            var res = "A curva de demanda se desloca para esquerda";
+            var res = "A curva de demanda se desloca para direita";
           }
           if (variante == "expectativas") {
             var res = "A curva de demanda se desloca para esquerda";
