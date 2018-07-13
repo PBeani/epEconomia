@@ -24,6 +24,189 @@
             <div id="plot">
                 <div class="plot standard">
                 </div>
+                <div id="elasticidadeD" class="plot elasticidadeD hidden">
+
+                    <div class="form">
+                        <div class="basic">
+                            <h2>Calcular Elasticidade por Preço Demanda</h2>
+                            <div class="form-item">
+                                <label for="demFinal">Digite o valor da demanda final
+                                    <strong>1</strong>:</label>
+                                <input type="text" name="demFinal" class="demFinal" />
+                            </div>
+
+                            <div class="form-item">
+                                <label for="demInicial">Digite o valor da demanda inicial
+                                    <strong>2</strong>:</label>
+                                <input type="text" name="demInicial" class="demInicial" />
+                            </div>
+
+                            <div class="form-item">
+                                <label for="preFinal">Digite o valor preço final
+                                    <strong>3</strong>:</label>
+                                <input type="text" name="preFinal" class="preFinal" />
+                            </div>
+                            <div class="form-item">
+                                <label for="preInicial">Digite o valor preço inicial
+                                    <strong>4</strong>:</label>
+                                <input type="text" name="preInicial" class="preInicial" />
+                            </div>
+                            <div class="form-item">
+                                <label for="res">Resultado:</label>
+                            </div>
+                            <div class="form-item basic">
+                                <h3 class="res"></h3>
+                            </div>
+                            <div class="form-item">
+                                <div class="basic btn">Calcular</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="elasticidadeC" class="plot elasticidadeC hidden">
+                    <div class="form">
+                        <div class="basic">
+                            <h2>Calcular Elasticidade Cruzada</h2>
+                            <div class="form-item">
+                                <label for="demFinal">Digite o valor da demanda final produto X
+                                    <strong>1</strong>:</label>
+                                <input type="text" name="demFinal" class="demFinal" />
+                            </div>
+
+                            <div class="form-item">
+                                <label for="demInicial">Digite o valor da demanda inicial produto X
+                                    <strong>2</strong>:</label>
+                                <input type="text" name="demInicial" class="demInicial" />
+                            </div>
+
+                            <div class="form-item">
+                                <label for="preFinal">Digite o valor preço final produto Y
+                                    <strong>3</strong>:</label>
+                                <input type="text" name="preFinal" class="preFinal" />
+                            </div>
+                            <div class="form-item">
+                                <label for="preInicial">Digite o valor preço inicial produto Y
+                                    <strong>4</strong>:</label>
+                                <input type="text" name="preInicial" class="preInicial" />
+                            </div>
+                            <div class="form-item">
+                                <label for="res">Resultado:</label>
+                            </div>
+                            <div class="form-item basic">
+                                <h3 class="res"></h3>
+                            </div>
+                            <div class="form-item">
+                                <div class="basic btn">Calcular</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="elasticidadeR" class="plot elasticidadeR hidden">
+                    <div class="form">
+                        <div class="basic">
+                            <h2>Calcular Elasticidade por Renda</h2>
+                            <div class="form-item">
+                                <label for="demFinal">Digite o valor da demanda final
+                                    <strong>1</strong>:</label>
+                                <input type="text" name="demFinal" class="demFinal" />
+                            </div>
+
+                            <div class="form-item">
+                                <label for="demInicial">Digite o valor da demanda inicial
+                                    <strong>2</strong>:</label>
+                                <input type="text" name="demInicial" class="demInicial" />
+                            </div>
+
+                            <div class="form-item">
+                                <label for="renFinal">Digite o valor da renda final
+                                    <strong>3</strong>:</label>
+                                <input type="text" name="renFinal" class="renFinal" />
+                            </div>
+                            <div class="form-item">
+                                <label for="renInicial">Digite o valor da renda inicial
+                                    <strong>4</strong>:</label>
+                                <input type="text" name="renInicial" class="renInicial" />
+                            </div>
+                            <div class="form-item">
+                                <label for="res">Resultado:</label>
+                            </div>
+                            <div class="form-item basic">
+                                <h3 class="res"></h3>
+                            </div>
+                            <div class="form-item">
+                                <div class="basic btn">Calcular</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="demanda" class="plot demanda hidden">
+                    <div class="form">
+                        <div class="basic">
+                            <h2>Calcular deslocamento curva de Demanda</h2>
+                            <div class="form-item">
+                                <label for="variante">Selecione a variante:</label>
+                                <select name="variante" class="variante">
+                                    <option value="gosto">Gosto ou preferência da População </option>
+                                    <option value="probCompra">Probabilidade de Compra da População</option>
+                                    <option value="receita">Receita</option>
+                                    <option value="precSubstitutos">Preço dos produtos Substitutos</option>
+                                    <option value="precComplementares"> Preço dos produtos Complementares </option>
+                                    <option value="expectativas"> Expectativas futuras </option>
+                                </select>
+                            </div>
+
+                            <div class="form-item">
+                                <label for="peso"> Selecione o peso do fator de mudança: </label>
+                                <select name="peso" class="peso">
+                                    <option value="aumenta"> Aumenta </option>
+                                    <option value="diminui"> Diminui </option>
+                                </select>
+                            </div>
+                            <div class="form-item">
+                                <label for="res">Resultado:</label>
+                            </div>
+                            <div class="form-item basic">
+                                <h3 class="res"></h3>
+                            </div>
+                            <div class="form-item">
+                                <div class="basic btn">Calcular</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="oferta" class="plot oferta hidden">
+                    <div class="form">
+                        <div class="basic">
+                            <h2>Calcular deslocamento curva de Oferta</h2>
+                            <div class="form-item">
+                                <label for="variante">Selecione a variante:</label>
+                                <select name="variante" class="variante">
+                                    <option value="natureza">Condições naturais para Produção </option>
+                                    <option value="preco">Preço dos recursos</option>
+                                    <option value="tecnologia">Tecnologia</option>
+                                    <option value="gorveno">Políticas Governamentais</option>
+                                </select>
+                            </div>
+
+                            <div class="form-item">
+                                <label for="peso"> Selecione o peso do fator de mudança: </label>
+                                <select name="peso" class="peso">
+                                    <option value="aumenta"> Aumenta </option>
+                                    <option value="diminui"> Diminui </option>
+                                </select>
+                            </div>
+                            <div class="form-item">
+                                <label for="res">Resultado:</label>
+                            </div>
+                            <div class="form-item basic">
+                                <h3 class="res"></h3>
+                            </div>
+                            <div class="form-item">
+                                <div class="basic btn">Calcular</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id="fleming" class="plot fleming hidden">
                     <div class="flemingContent">
                         <div class="canvas">
@@ -345,6 +528,21 @@
                 <div class="plot fleming basic hidden">
                     AQUI VAI O TEXTO DE EXPLICACAO DE MUNDELL FLEMING
                 </div>
+                <div class="plot oferta basic hidden">
+                    AQUI VAI O TEXTO DE EXPLICACAO DE OFERTA
+                </div>
+                <div class="plot demanda basic hidden">
+                    AQUI VAI O TEXTO DE EXPLICACAO DE DEMANDA
+                </div>
+                <div class="plot elasticidadeR basic hidden">
+                    AQUI VAI O TEXTO DE EXPLICACAO DE Elasticidade Renda
+                </div>
+                <div class="plot elasticidadeD basic hidden">
+                    AQUI VAI O TEXTO DE EXPLICACAO DE Elasticidade Demanda
+                </div>
+                <div class="plot elasticidadeC basic hidden">
+                    AQUI VAI O TEXTO DE EXPLICACAO DE Elasticidade Cruzada
+                </div>
             </div>
         </div>
         <div id="macroItens" class="itens">
@@ -362,8 +560,20 @@
             </div>
         </div>
         <div id="microItens" class="itens" style="display: none;">
-            <div class="item" onclick="item()">
-                <span>[MICRO] Item 1</span>
+            <div class="item" onclick="item('.oferta')">
+                <span>Oferta</span>
+            </div>
+            <div class="item" onclick="item('.demanda')">
+                <span>Demanda</span>
+            </div>
+            <div class="item" onclick="item('.elasticidadeR')">
+                <span>Elasticidade/Renda</span>
+            </div>
+            <div class="item" onclick="item('.elasticidadeD')">
+                <span>Elasticidade/Demanda</span>
+            </div>
+            <div class="item" onclick="item('.elasticidadeC')">
+                <span>Elasticidade Cruzada</span>
             </div>
         </div>
     </section>
@@ -378,5 +588,10 @@
 <script src="src/js/inflation.js"></script>
 <script src="src/js/fleming.js"></script>
 <script src="src/js/pnb.js"></script>
+<script src="src/js/oferta.js"></script>
+<script src="src/js/demanda.js"></script>
+<script src="src/js/elasticidadeCruzada.js"></script>
+<script src="src/js/elasticidadeDemanda.js"></script>
+<script src="src/js/elasticidadeRenda.js"></script>
 
 </html>

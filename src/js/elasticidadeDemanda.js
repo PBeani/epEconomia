@@ -21,37 +21,4 @@ $(document).ready(function () {
       		document.calcDemanda.resp.value = resp;
     	}
     })();
-})
-
-<html>
-<body>
-<form name="calcDemanda" method="post" action="">
-   <fieldset>
-      <legend> Calcular Elasticidade por Preço Demanda </legend> 
-
-
-
-      <label for= "demFinal">Digite o valor da demanda final <strong>1</strong>:</label>
-      <input type="text" name="demFinal" id="demFinal" />
-
-      <label for="demInicial">Digite o valor da demanda inicial <strong>2</strong>:</label>
-      <input type="text" name="demInicial" id="demInicial" />
-
-      <label for= "preFinal">Digite o valor preço final <strong>3</strong>:</label>
-      <input type="text" name="preFinal" id="preFinal" />
-
-      <label for="preInicial">Digite o valor preço inicial <strong>4</strong>:</label>
-      <input type="text" name="preInicial" id="preInicial" />
-
-      <label for="resp">Resultado:</label>
-      <input type="text" name="resp" id="resp" />
-
-      <input type="button" value="Calcular" class="botao" onClick="calcular(document.calcDemanda.oper.value)"/>
-
-
-   </fieldset>
-</form>
-
-</body>
-</html>
-
+});

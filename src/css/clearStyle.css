@@ -87,3 +87,28 @@ table.basic td input{
 .basic ol li{
     margin-left: 10px;
 }
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+.form .basic{
+    padding: 20px;
+    min-width: 50%;
+}
+
+.basic .form-item{
+    margin-bottom: 20px;
+}
+
+.basic .form-item:last{
+    margin-bottom: 0;
+}
+
+.basic .btn{
+    width: 100%;
+}
+
+.form-item select, .form-item input{
+    height: 40px;
+}
