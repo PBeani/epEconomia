@@ -11,6 +11,7 @@ $(document).ready(function () {
             var $prev = $('tr[index='+ prev +']', module);
             var preveDeflator = $prev.find('.deflator strong').html();
             
+            // Cálculo da taxa de inflação
             var tax = (deflator - preveDeflator) * 100/preveDeflator;
             $('.taxa strong', $current).html(tax.toFixed(2) + ' %');
 
@@ -24,6 +25,7 @@ $(document).ready(function () {
             var nominalValue = $('.nominal input', $line).val() || 0;
             var realValue = $('.real input', $line).val() || 1;
 
+            // Cáculo do deflator
             var deflator = (nominalValue/realValue) * 100;
             $line.find('.deflator strong').html(deflator.toFixed(2));
             updateTax($line);

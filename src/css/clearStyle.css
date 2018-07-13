@@ -116,3 +116,8 @@ table.basic td input{
     height: 40px;
     font-family: 'Varela Round', sans-serif;
 }
+
+#text p{
+    text-align: left;
+    margin-bottom: 10px;
+}
