@@ -24,6 +24,37 @@
             <div id="plot">
                 <div class="plot standard">
                 </div>
+                <div id="price" class="plot price hidden">
+                    <div class="container">
+                        <div class="priceItem oferta basic">
+                            <label for="res">Equação da oferta: </label>
+                            <input type="number" class="cVal" value="1">
+                            <span>(</span>
+                            <input type="number" class="aVal">
+                            <span>X + </span>
+                            <input type="number" class="bVal">
+                            <span>)</span>
+                        </div>
+                        <div class="priceItem demanda basic">
+                            <label for="res">Equação da demanda: </label>
+                            <input type="number" class="cVal" value="1">
+                            <span>(</span>
+                            <input type="number" class="aVal">
+                            <span>X + </span>
+                            <input type="number" class="bVal">
+                            <span>)</span>
+                        </div>
+                        <div class="priceItem basic">
+                            <label for="res">Resultado (R$):</label>
+                            <div>
+                                <h3 class="res"></h3>
+                            </div>
+                        </div>
+                        <div class="priceItem basic btn">
+                            Calcular preço de equilíbrio
+                        </div>
+                    </div>
+                </div>
                 <div id="elasticidadeD" class="plot elasticidadeD hidden">
 
                     <div class="form">
@@ -519,65 +550,95 @@
                 <div class="plot  pibCalculator basic hidden">
                     <h2>PIB Real e Nominal</h2>
                     <p>
-                        O módulo é responsável por simular o cálculo do PIB nominal dos anos listados, e também o PIB real do ano de 2018, em relação aos demais anos. O cálculo utilizado é o que foi apresentado no material do curso, multiplicando as quantidades do ano vigente pelo valor dos mesmos itens nos anos anteriores.
+                        O módulo é responsável por simular o cálculo do PIB nominal dos anos listados, e também o PIB real do ano de 2018, em relação
+                        aos demais anos. O cálculo utilizado é o que foi apresentado no material do curso, multiplicando
+                        as quantidades do ano vigente pelo valor dos mesmos itens nos anos anteriores.
                     </p>
                     <h2>Como usar</h2>
                     <p>
-                        A primeira coluna é utilizada para adicionar produtos, que serão a base para realizar os cálculos. Ao clicar no botão de adicionar produto, aparecerá um modal com um campo, onde deve ser digitado o nome de um produto conforme desejar. Para remover um item, clique no ícone com o "x".
+                        A primeira coluna é utilizada para adicionar produtos, que serão a base para realizar os cálculos. Ao clicar no botão de
+                        adicionar produto, aparecerá um modal com um campo, onde deve ser digitado o nome de um produto conforme
+                        desejar. Para remover um item, clique no ícone com o "x".
                     </p>
                     <p>
-                        A segunda coluna é onde pode ser informado o valor e a quantidade de cada produto, no ano selecionado. Os produtos inseridos na primeira coluna serão listados nessa. Esse componente também informa o PIB nominal do ano selecionado, conforme os valores informados. 
+                        A segunda coluna é onde pode ser informado o valor e a quantidade de cada produto, no ano selecionado. Os produtos inseridos
+                        na primeira coluna serão listados nessa. Esse componente também informa o PIB nominal do ano selecionado,
+                        conforme os valores informados.
                     </p>
                     <p>
-                        A terceira coluna conta com a exibição do PIB real do ano de 2018 em relação aos demais, sendo que o resultado é exibido conforme os valores forem sendo inseridos na coluna anterior. 
+                        A terceira coluna conta com a exibição do PIB real do ano de 2018 em relação aos demais, sendo que o resultado é exibido
+                        conforme os valores forem sendo inseridos na coluna anterior.
                     </p>
                 </div>
                 <div class="plot pnb basic hidden">
                     <h2>PIB/PNB</h2>
                     <p>
-                        O módulo tem a função de exemplificar a diferença entre PIB e PNB, por meio de um exemplo numérico representando a instalação de empresas de duas nacionalidades diferentes, podendo estar dentro ou fora de seu país. O PIB é calculado pelo valor da renda gerada dentro do país, independente da nacionalidade da empresa. O PNB é calculado baseado na nacionalidade das empresas, independente da localização.
+                        O módulo tem a função de exemplificar a diferença entre PIB e PNB, por meio de um exemplo numérico representando a instalação
+                        de empresas de duas nacionalidades diferentes, podendo estar dentro ou fora de seu país. O PIB é
+                        calculado pelo valor da renda gerada dentro do país, independente da nacionalidade da empresa. O
+                        PNB é calculado baseado na nacionalidade das empresas, independente da localização.
                     </p>
                     <h2>Como usar</h2>
                     <p>
-                        Para adicionar uma empresa, utilize o botão Adicionar Empresa. Ao clicar nele, um modal será aberto para que seja informado o nome desejado da empresa. Para remover uma empresa, utilize o ícone com o "x".
+                        Para adicionar uma empresa, utilize o botão Adicionar Empresa. Ao clicar nele, um modal será aberto para que seja informado
+                        o nome desejado da empresa. Para remover uma empresa, utilize o ícone com o "x".
                     </p>
                     <p>
-                        É importante notar que, inserir uma empresa na tabela do país significa que, e somente que, ela está instalada naquele país. Para alterar o valor da renda da empresa e a sua nacionalidade, utilize os campos da empresa adicionados na tabela do país. O valor do PIB e do PNB dos países é atualizado automaticamente com cada alteração nas tabelas.
+                        É importante notar que, inserir uma empresa na tabela do país significa que, e somente que, ela está instalada naquele país.
+                        Para alterar o valor da renda da empresa e a sua nacionalidade, utilize os campos da empresa adicionados
+                        na tabela do país. O valor do PIB e do PNB dos países é atualizado automaticamente com cada alteração
+                        nas tabelas.
                     </p>
                 </div>
                 <div class="plot inflacao basic hidden">
                     <h2>Taxa de Inflação</h2>
                     <p>
-                        O módulo foi projetado para realizar o cálculo da taxa de inflação, que é feito em função dos deflatores, que por sua vez são calculados em função dos valores do PIB Real e Nominal de cada ano. As fórmulas utilizadas para obter esses valores são as apresentada no material do curso, e podem ser observadas conforme indicado no arquivo fonte do módulo. 
+                        O módulo foi projetado para realizar o cálculo da taxa de inflação, que é feito em função dos deflatores, que por sua vez
+                        são calculados em função dos valores do PIB Real e Nominal de cada ano. As fórmulas utilizadas para
+                        obter esses valores são as apresentada no material do curso, e podem ser observadas conforme indicado
+                        no arquivo fonte do módulo.
                     </p>
                     <h2>Como usar</h2>
                     <p>
-                        Para interagir com o módulo, basta apenas inserir os valores arbitrários do PIB Real e Nominal para os anos da tabela e o valor do deflator e da taxa de inflação serão atualizados automaticamente. O módulo não suporta salto nos anos, se o ano anterior não estiver preenchido, o valor da taxa de inflação não será calculado corretamente.
+                        Para interagir com o módulo, basta apenas inserir os valores arbitrários do PIB Real e Nominal para os anos da tabela e o
+                        valor do deflator e da taxa de inflação serão atualizados automaticamente. O módulo não suporta salto
+                        nos anos, se o ano anterior não estiver preenchido, o valor da taxa de inflação não será calculado
+                        corretamente.
                     </p>
                 </div>
                 <div class="plot fleming basic hidden">
                     <h2>Mundell-Fleming</h2>
                     <p>
-                        Esse módulo é responsável por simular o comportamento dos componentes do modelo Mundell-Fleming. O modelo considera que os preços são constantes e que existe mobilidade perfeita de capitais, e tem o objetivo de verificar como se dá o equilíbrio macroeconômico e a eficácia das políticas econômicas nesse meio.
+                        Esse módulo é responsável por simular o comportamento dos componentes do modelo Mundell-Fleming. O modelo considera que os
+                        preços são constantes e que existe mobilidade perfeita de capitais, e tem o objetivo de verificar
+                        como se dá o equilíbrio macroeconômico e a eficácia das políticas econômicas nesse meio.
                     </p>
                     <p>
-                        Os componentes considerados são a curva LM, a curva IS e a curva BP, e o resultado das políticas implementadas é avaliado em relação ao movimento desses componentes e ao impacto nos valores de e, Y e NX.
+                        Os componentes considerados são a curva LM, a curva IS e a curva BP, e o resultado das políticas implementadas é avaliado
+                        em relação ao movimento desses componentes e ao impacto nos valores de e, Y e NX.
                     </p>
                     <p>
-                        Foram implementadas as políticas de expansão monetária, expansão fiscal e restrição de importações, considerando taxa de câmbio fixa e flutuante, totalizando seis possíveis cenários.
+                        Foram implementadas as políticas de expansão monetária, expansão fiscal e restrição de importações, considerando taxa de
+                        câmbio fixa e flutuante, totalizando seis possíveis cenários.
                     </p>
                     <p>
-                        O material consultado para o desenvolvimento desse módulo foi o apresentado em aula, e o capítulo 8 do manuscrito "Macroeconomia", de Vivaldo Mendes e Sofia Vale(2000/2001).
+                        O material consultado para o desenvolvimento desse módulo foi o apresentado em aula, e o capítulo 8 do manuscrito "Macroeconomia",
+                        de Vivaldo Mendes e Sofia Vale(2000/2001).
                     </p>
                     <h2>Como usar</h2>
                     <p>
-                        A primeira coluna é utilizada para apresentar imagens descritivas dos componentes e do deslocamento dos mesmos em relação às políticas econômicas adotadas.
+                        A primeira coluna é utilizada para apresentar imagens descritivas dos componentes e do deslocamento dos mesmos em relação
+                        às políticas econômicas adotadas.
                     </p>
                     <p>
                         A segunda coluna é responsável por apresentar os resultados das políticas econômicas selecionadas.
                     </p>
                     <p>
-                        A terceira coluna possui a lista de opções de ações disponíveis. As quatro primeiras correspondem à apresentar na primeira coluna um gráfico com detalhes sobre o componente selecionado. As três seguintes são as possíveis opções de políticas que podem ser aplicadas no modelo. O último item indica qual é a taxa de câmbio que está sendo aplicada no momento, e ao clicar nele, a taxa de câmbio é alternada, entre as opções fixa e flutuante.
+                        A terceira coluna possui a lista de opções de ações disponíveis. As quatro primeiras correspondem à apresentar na primeira
+                        coluna um gráfico com detalhes sobre o componente selecionado. As três seguintes são as possíveis
+                        opções de políticas que podem ser aplicadas no modelo. O último item indica qual é a taxa de câmbio
+                        que está sendo aplicada no momento, e ao clicar nele, a taxa de câmbio é alternada, entre as opções
+                        fixa e flutuante.
                     </p>
                 </div>
                 <div class="plot oferta basic hidden">
@@ -594,6 +655,30 @@
                 </div>
                 <div class="plot elasticidadeC basic hidden">
                     AQUI VAI O TEXTO DE EXPLICACAO DE Elasticidade Cruzada
+                </div>
+                <div class="plot price basic hidden">
+                    <h2>Preço de Equilíbrio</h2>
+                    <p>
+                        Esse módulo tem a função de calcular o valor em reais(R$) do preço de equilíbrio de um dado cenário econômico. Esse valor
+                        é encontrado calculando o valor de Y(eixo do preço), no ponto de intersecção entre as curvas de oferta
+                        e demanda.
+                    </p>
+                    <p>
+                        Na implementação apresentada, as curvas são descritas por uma equação de reta. O material utilizado para formular esse conteúdo
+                        foi retirado do curso "Oferta, demanda e equilíbrio de mercado", da plataforma digital Khan Academy.
+                    </p>
+                    <h2>Como usar</h2>
+                    <p>
+                        Para utilizar esse módulo, basta preencher os campos que compõe as equações de reta e clicar no botão calcular para obter
+                        o resultado. Sobre a estrutura das equações, temos que as retas são descritas por:
+                    </p>
+                    <p class="equation">
+                        ax + by + c = 0
+                    </p>
+                    <p>
+                        Nas equações apresentadas, o primeiro campo corresponde ao coeficiente "b", o segundo campo corresponde ao coeficiente "a"
+                        e o terceiro corresponde a "c".
+                    </p>
                 </div>
             </div>
         </div>
@@ -627,10 +712,14 @@
             <div class="item" onclick="item('.elasticidadeC')">
                 <span>Elasticidade Cruzada</span>
             </div>
+            <div class="item" onclick="item('.price')">
+                <span>Preço de Equilíbrio</span>
+            </div>
         </div>
     </section>
     <footer>
-        Amanda da Silva Biosca NºUSP: 9761677 - Carla Piazzon Ramos Vieira NºUSP: 9779120 - Pedro Henrique Beani da Silva NºUSP: 9875416 / Turma Matutino (seg. 08:00h - 12:00h)
+        Amanda da Silva Biosca NºUSP: 9761677 - Carla Piazzon Ramos Vieira NºUSP: 9779120 - Pedro Henrique Beani da Silva NºUSP:
+        9875416 / Turma Matutino (seg. 08:00h - 12:00h)
     </footer>
 </body>
 <script src="src/js/jquery.js"></script>
@@ -645,5 +734,6 @@
 <script src="src/js/elasticidadeCruzada.js"></script>
 <script src="src/js/elasticidadeDemanda.js"></script>
 <script src="src/js/elasticidadeRenda.js"></script>
+<script src="src/js/price.js"></script>
 
 </html>

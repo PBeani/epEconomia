@@ -118,6 +118,40 @@ table.basic td input{
 }
 
 #text p{
-    text-align: left;
+    text-align: justify;
     margin-bottom: 10px;
+}
+
+#text p.equation{
+    text-align: center;
+    margin: 20px 0;
+}
+
+#price .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.priceItem{
+    align-self: center;
+    margin-bottom: 20px;
+    height: 80px;
+    padding: 15px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.priceItem *{
+    align-self: center;
+}
+
+.priceItem input{
+    width: 60px;
+    height: 40px;
+    margin: 0 5px 0 20px;
+}
+
+.priceItem.btn{
+    height: auto;
 }
