@@ -1,25 +1,25 @@
 $(document).ready(function () {
-    (function () {
+	(function () {
 
-    	var module = $("#elasticidadeDemanda");
-    	
+		var module = $("#elasticidadeDemanda");
 
-    	$('.btn', module).on('click', function () {
 
-    		//atribuindo valor as variaveis
-    		var demandaFinal = $('.demFinal', module).val();
-        var demandaInicial = $('.demInicial', module).val();
+		$('.btn', module).on('click', function () {
 
-      		var precoFinal = $('.precoFinal', module).val();e;
-      		var precoInicial = $('.precoInicial', module).val();
+			//atribuindo valor as variaveis
+			var demandaFinal = $('.demFinal', module).val();
+			var demandaInicial = $('.demInicial', module).val();
 
-      		//variaveis de calculo
-      		var demanda = (demandaFinal - demandaInicial)/demandaInicial;
-      		var preco = (precoFinal - precoInicial)/precoInicial;
-      		var resp = demanda/preco;
+			var precoFinal = $('.precoFinal', module).val(); e;
+			var precoInicial = $('.precoInicial', module).val();
 
-      		//resultado final
-      		$('.res', module).html(resp);
-    	}
+			//variaveis de calculo
+			var demanda = (demandaFinal - demandaInicial) / demandaInicial;
+			var preco = (precoFinal - precoInicial) / precoInicial;
+			var resp = demanda / preco;
+
+			//resultado final
+			$('.res', module).html(resp);
+		});
     })();
 });

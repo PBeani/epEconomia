@@ -117,7 +117,7 @@ table.basic td input{
     font-family: 'Varela Round', sans-serif;
 }
 
-#text p{
+#text p, .standard p{
     text-align: justify;
     margin-bottom: 10px;
 }
